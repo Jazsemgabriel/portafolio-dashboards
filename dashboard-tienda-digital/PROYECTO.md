@@ -58,7 +58,7 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 - `dim_empleados`
 
 📌 *Modelo relacional ilustrado:*
-![Modelo Relacional](.paginas/modelo_relacional.png)
+![Modelo Relacional](./paginas/modelo_relacional.png)
 
 ---
 
@@ -67,12 +67,12 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 ### 1. Overview
 Esta página ofrece un resumen general de las ventas e ingresos de la tienda digital, incluyendo métricas clave como el total de ingresos, ventas, ticket promedio e ingresos/ventas por mes. También presenta un desglose por categoría, ventas por canal y los top vendedores.
 
-![Página Overview](.paginas/01.overview.png)
+![Página Overview](./paginas/01.overview.png)
 
 ### 2. Productos
 Esta página se enfoca en el rendimiento detallado de los productos, mostrando un ranking de los productos más vendidos, la cantidad de ventas por categoría y destacando el producto estrella con sus métricas principales.
 
-![Página Productos](.paginas/02.productos.png)
+![Página Productos](./paginas/02.productos.png)
 
 ---
 
@@ -86,7 +86,7 @@ Entre las medidas DAX utilizadas para los cálculos del dashboard, destacan:
 - `porcentaje_contribucion_producto_2024 = DIVIDE( [total_ventas_por_producto_2024], CALCULATE( SUM(facts_ventas[cantidad_vendida]), ALL(facts_ventas) ), 0 )`
 
 📌 *Captura de medidas en Power BI:*
-![Medidas](.paginas/medidas.png)
+![Medidas](./paginas/medidas.png)
 
 ---
 
