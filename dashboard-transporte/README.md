@@ -14,7 +14,7 @@ Visualizar indicadores clave para la toma de decisiones operativas y comerciales
 
 ---
 
-# 🧪 Proceso de desarrollo
+## 🧪 Proceso de desarrollo
 
 Este dashboard fue construido a partir de un enfoque completo que incluyó:
 
