@@ -54,7 +54,7 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 - `dim_fecha`
 
 📌 *Modelo relacional ilustrado:*
-![Modelo Relacional](./modelado.png)
+![Modelo Relacional](./paginas/modelado.png)
 
 ---
 
@@ -62,10 +62,10 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 
 El dashboard presenta una vista principal para el análisis del año actual:
 
-### 1. Overview 2024
-Esta página muestra un resumen de los indicadores de recursos humanos para el año 2024, incluyendo el total de empleados, contratados, salario anual promedio, edad promedio, distribución por país, departamento, rango etario, empleados con discapacidad y porcentaje de inclusión étnica y retención.
+### 1. Overview 
+Esta página muestra un resumen de los indicadores de recursos humanos, incluyendo el total de empleados, contratados, salario anual promedio, edad promedio, distribución por país, departamento, rango etario, empleados con discapacidad y porcentaje de inclusión étnica y retención.
 
-![Página Overview 2024](./02.overview_2024.png)
+![Página Overview 2024](./paginas//01.overview.png)
 
 ---
 
@@ -73,40 +73,72 @@ Esta página muestra un resumen de los indicadores de recursos humanos para el a
 
 Entre las medidas DAX utilizadas para los cálculos del dashboard, destacan:
 
-- `baseline`
-- `bg_color_contratados`
-- `bg_color_edad`
-- `bg_color_empleados`
-- `bg_color_etnia`
-- `bg_color_retencion`
-- `bg_variacion_salario`
-- `color_icono_contratados`
-- `color_icono_edad`
-- `color_icono_empleados`
-- `color_icono_etnia`
-- `color_icono_retencion`
-- `color_icono_salario`
-- `costo_total_salario`
-- `diff_contratados`
-- `diff_edad`
-- `diff_empleados`
-- `diff_etnia`
-- `diff_retencion`
-- `diff_salario`
-- `empleado_fuera`
-- `indice_retencion`
-- `indice_retencion_anio_anterior`
-- `media_salarial_anual`
-- `media_salarial_anual_anio_anterior`
-- `porcentaje_inclusion_etnica`
-- `porcentaje_inclusion_etnica_anio_anter...`
-- `promedio_duracion_empleados`
-- `promedio_duracion_empleados_anio_ant...`
-- `promedio_edad`
-- `promedio_edad_anio_anterior`
+-   `total_empleados_activos =`
+    ```dax
+    COUNTROWS(
+        FILTER(
+            SUMMARIZE(
+                fct_hechos,
+                fct_hechos[ID_Empleado],
+                "EsActivo", LOOKUPVALUE(
+                    dim_empleados[Motivo_Salida],
+                    dim_empleados[ID_Empleado], fct_hechos[ID_Empleado]
+                )
+            ),
+            [EsActivo] = "Activo"
+        )
+    )
+    ```
+-   `total_empleados_contratados =`
+    ```dax
+    CALCULATE(
+        COUNTROWS('fct_hechos'),
+        'fct_hechos'[Tipo_Evento] = "Contratación",
+        VALUES('Dim_Fecha'[Año])
+    )
+    ```
+-   `total_salarios = SUM('fct_hechos'[Salario])`
+-   `indice_retencion =`
+    ```dax
+    VAR Anio = SELECTEDVALUE('Dim_Fecha'[Año])
+    VAR EmpleadosInicio =
+        CALCULATE(
+            COUNTROWS('Dim_Empleados'),
+            'Dim_Empleados'[Fecha_Ingreso] <= DATE(Anio, 1, 1)
+        )
+    VAR EmpleadosFin =
+        CALCULATE(
+            COUNTROWS('Dim_Empleados'),
+            'Dim_Empleados'[Fecha_Ingreso] <= DATE(Anio, 1, 1),
+            OR(ISBLANK('Dim_Empleados'[Fecha_Salida]), 'Dim_Empleados'[Fecha_Salida] > DATE(Anio, 12, 31))
+        )
+    RETURN
+    DIVIDE(EmpleadosFin, EmpleadosInicio, 0)
+    ```
+-   `porcentaje_inclusion_etnica =`
+    ```dax
+    VAR Anio = SELECTEDVALUE('Dim_Fecha'[Año])
+    VAR EmpleadosActivos =
+        CALCULATETABLE(
+            'Dim_Empleados',
+            'Dim_Empleados'[Fecha_Ingreso] <= DATE(Anio, 12, 31),
+            OR(
+                ISBLANK('Dim_Empleados'[Fecha_Salida]),
+                'Dim_Empleados'[Fecha_Salida] > DATE(Anio, 12, 31)
+            )
+        )
+    VAR Total = COUNTROWS(EmpleadosActivos)
+    VAR Minorias =
+        CALCULATE(
+            COUNTROWS('Dim_Empleados'),
+            KEEPFILTERS(EmpleadosActivos),
+            'Dim_Empleados'[Etnia] <> "Blanco"
+        )
+    RETURN
+    DIVIDE(Minorias, Total, 0)```
 
 📌 *Captura de medidas en Power BI:*
-![Medidas](./medidas.png)
+![Medidas](./paginas//medidas.png)
 
 ---
 
@@ -114,12 +146,13 @@ Entre las medidas DAX utilizadas para los cálculos del dashboard, destacan:
 
 Basado en las visualizaciones del dashboard, se pueden extraer las siguientes conclusiones:
 
-- El número total de empleados se ha mantenido estable en 2024.
-- El salario anual promedio muestra un ligero incremento en 2024.
-- Perú, Uruguay y Chile son los países con mayor concentración de empleados en 2024.
-- Finanzas y Marketing son los departamentos con más empleados.
-- La distribución por rango etario muestra que la mayoría de los empleados se encuentran entre los 25 y 40 años.
-- La inclusión étnica y la retención anual son métricas importantes que deben ser monitoreadas.
+- La cantidad de empleados se mantuvo estable en 2024.
+- El salario anual promedio tuvo un leve aumento.
+- Perú, Uruguay y Chile concentran la mayor parte del personal.
+- Finanzas y Marketing son los departamentos con más colaboradores.
+- La mayoría del equipo tiene entre 25 y 40 años.
+- La retención anual fue del 70%, con espacio para mejorar.
+- La inclusión étnica supera el 80%, sin cambios frente a 2023.
 
 ---
 
