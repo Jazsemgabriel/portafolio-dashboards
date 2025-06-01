@@ -36,13 +36,19 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 ## 📊 Vistas del Dashboard
 
 ### 1. Overview
-![Página Overview](./paginas/01.overview.png)
+![Página Overview](./01.overview.png)
 
 ### 2. Ciudades
-![Página Ciudades](./paginas/02.ciudades.png)
+![Página Ciudades](./02.ciudades.png)
+
+### 3. Vehículos
+![Página Clientes](./03.vehiculos.png)
 
 ### 3. Clientes
-![Página Clientes](./paginas/04.clientes.png)
+![Página Clientes](./04.clientes.png)
+
+### 3. Viajes
+![Página Clientes](./05.viajes.png)
 
 ---
 
@@ -81,6 +87,6 @@ Entre las medidas DAX utilizadas destacan:
 ## 👤 Autor
 
 Gabriel Rodríguez  
-[LinkedIn](https://www.linkedin.com/in/tu-linkedin/) *(puedes editar esto)*
+[LinkedIn](https://www.linkedin.com/in/gabriel-rodr%C3%ADguez-4b4a6216b/) *(puedes editar esto)*
 
 ---
