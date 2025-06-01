@@ -14,6 +14,31 @@ Visualizar indicadores clave para la toma de decisiones operativas y comerciales
 
 ---
 
+# 🧪 Proceso de desarrollo
+
+Este dashboard fue construido a partir de un enfoque completo que incluyó:
+
+### 1. Diseño personalizado en Figma
+Se planteó una interfaz visual clara y jerarquizada, con un estilo sobrio y profesional, adaptado al contexto de empresas de transporte.
+
+### 2. Estructuración de la fuente de datos
+La información original venía en una **sola hoja de Excel** no estructurada. A partir de ahí se construyó un **modelo dimensional en estrella**, separando dimensiones y métricas en tablas específicas.
+
+### 3. Preparación y limpieza de datos
+- Uso de **Power Query** para transformar columnas, eliminar errores y generar claves.
+- Formatos de fecha unificados y tipologías estandarizadas.
+- Separación semántica entre entidades (clientes, ciudades, vehículos, etc.).
+
+### 4. Modelado relacional en Power BI
+Se crearon relaciones optimizadas entre las tablas, priorizando el rendimiento y la claridad del modelo.
+
+### 5. Creación de medidas con DAX
+- Se calcularon métricas clave como ingresos, márgenes y KPIs por año.
+- Se incluyeron comparaciones anuales y porcentajes de variación.
+- Se modelaron medidas dinámicas y segmentadas por cliente, ciudad y tipo de vehículo.
+
+---
+
 ## 🧱 Modelo Dimensional
 
 Este dashboard está basado en un modelo estrella con las siguientes tablas:
@@ -82,7 +107,6 @@ Entre las medidas DAX utilizadas destacan:
 - Power BI Desktop
 - Power Query
 - DAX
-- Visualizaciones personalizadas (mapas, heatmaps, barras combinadas)
 
 ---
 
