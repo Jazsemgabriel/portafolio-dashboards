@@ -4,6 +4,7 @@ Este proyecto de Power BI analiza los ingresos, margen y eficiencia de viajes de
 
 ---
 
+
 ## 🎯 Objetivo del Dashboard
 
 Visualizar indicadores clave para la toma de decisiones operativas y comerciales:
@@ -13,6 +14,7 @@ Visualizar indicadores clave para la toma de decisiones operativas y comerciales
 - Análisis temporal
 
 ---
+
 
 ## 🧪 Proceso de desarrollo
 
