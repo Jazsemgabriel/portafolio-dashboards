@@ -98,7 +98,7 @@ Basado en las visualizaciones del dashboard, se pueden extraer las siguientes co
 - La cantidad de ventas por canal fue equilibrada entre el digital (51%) y la tienda física (49%).
 - Amazon Fire Ultra fue el producto más vendido de 2024.
 - Barcelona y Valencia generaron más ventas en el 2024, con 22 mil y 20 mil, respectivamente.
-- Jane Lopez fue la vendedora con el mayor volumen de ventas (+970).
+- Jane Lopez fue la vendedora con el mayor volumen de ventas (+900).
 
 ---
 
