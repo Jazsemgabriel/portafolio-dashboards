@@ -56,26 +56,26 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 - `dim_calendario`
   
 📌 *Modelo relacional ilustrado:*
-![Modelo Relacional](./modelo_relacional.png)
+![Modelo Relacional](./paginas/modelo_relacional.png)
 
 ---
 
 ## 📊 Vistas del Dashboard
 
 ### 1. Overview
-![Página Overview](./01.overview.png)
+![Página Overview](./paginas/01.overview.png)
 
 ### 2. Ciudades
-![Página Ciudades](./02.ciudades.png)
+![Página Ciudades](./paginas/02.ciudades.png)
 
 ### 3. Vehículos
-![Página Clientes](./03.vehiculos.png)
+![Página Clientes](./03./paginas/vehiculos.png)
 
 ### 3. Clientes
-![Página Clientes](./04.clientes.png)
+![Página Clientes](./paginas/04.clientes.png)
 
 ### 3. Viajes
-![Página Clientes](./05.viajes.png)
+![Página Clientes](./paginas/05.viajes.png)
 
 ---
 
@@ -89,7 +89,7 @@ Entre las medidas DAX utilizadas destacan:
 - `porcentaje_viajes_completados_2024 = DIVIDE(CALCULATE(COUNTROWS(fact_viajes), fact_viajes[estado_viaje] = "Completado",TREATAS( {2024}, dim_calendario[Año])), [total_viajes_2024],0)`
 
 📌 *Captura de medidas en Power BI:*
-![Medidas](./medidas.png)
+![Medidas](./paginas/medidas.png)
 
 ---
 
