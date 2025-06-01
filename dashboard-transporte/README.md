@@ -9,8 +9,8 @@ Este proyecto de Power BI analiza los ingresos, margen y eficiencia de viajes de
 Visualizar indicadores clave para la toma de decisiones operativas y comerciales:
 
 - Ingresos y márgenes por región, ciudad, tipo de vehículo y cliente
-- Rendimiento de viajes por volumen y puntualidad
-- Análisis temporal por meses, días y horas
+- Rendimiento de viajes por volumen e ingresos
+- Análisis temporal
 
 ---
 
@@ -19,14 +19,14 @@ Visualizar indicadores clave para la toma de decisiones operativas y comerciales
 Este dashboard está basado en un modelo estrella con las siguientes tablas:
 
 **Tabla de hechos:**
-- `F_Viajes`: contiene ingresos, costos, márgenes, fechas y vehículos
+- `fact_viajes`: contiene ingresos, costos, márgenes, fechas y vehículos
 
 **Dimensiones:**
-- `D_Cliente`
-- `D_Ciudad`
-- `D_Tiempo`
-- `D_Vehículo`
-- `D_TipoCliente`
+- `dim_clientes`
+- `dim_ciudad`
+- `dim_choferes`
+- `dim_vehiculos`
+- `dim_calendario`
 
 📌 *Modelo relacional ilustrado:*
 ![Modelo Relacional](./modelo_relacional.png)
@@ -56,10 +56,10 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 
 Entre las medidas DAX utilizadas destacan:
 
-- `Total Ingresos = SUM(F_Viajes[Ingresos])`
-- `Margen (%) = DIVIDE(F_Viajes[Margen], F_Viajes[Ingresos])`
-- `% Viajes Completos = DIVIDE(ViajesCompletos, TotalViajes)`
-- `Crecimiento Interanual = DIVIDE(Actual - Anterior, Anterior)`
+- `total_viajes_2024 = CALCULATE(COUNT(fact_viajes[id_viaje]), TREATAS( {2024}, dim_calendario[Año]))`
+- `margen_operativo_2024 = [total_ingresos_2024] - [costos_2024]`
+- `margen_operativo_porcentaje_2024 = DIVIDE( [margen_operativo_2024], [total_ingresos_2024], 0)`
+- `porcentaje_viajes_completados_2024 = DIVIDE(CALCULATE(COUNTROWS(fact_viajes), fact_viajes[estado_viaje] = "Completado",TREATAS( {2024}, dim_calendario[Año])), [total_viajes_2024],0)`
 
 📌 *Captura de medidas en Power BI:*
 ![Medidas](./medidas.png)
@@ -69,9 +69,11 @@ Entre las medidas DAX utilizadas destacan:
 ## 🧩 Conclusiones
 
 - La región Este genera el mayor volumen de ingresos, seguida por el Noreste.
-- El cliente "Gobierno" representa el mayor ingreso individual.
+- El cliente Gobierno representa el mayor ingreso individual.
 - El modelo Iveco Daily es el más rentable por volumen.
 - La puntualidad en los viajes se mantiene alta (>90%).
+- Valencia es la ciudad con más viajes y más ingresos en 2024.
+- En 2023 y 2024 agosto fue el mes con más clientes promediando 400 en total.
 
 ---
 
@@ -87,6 +89,6 @@ Entre las medidas DAX utilizadas destacan:
 ## 👤 Autor
 
 Gabriel Rodríguez  
-[LinkedIn](https://www.linkedin.com/in/gabriel-rodr%C3%ADguez-4b4a6216b/) *(puedes editar esto)*
+[LinkedIn](https://www.linkedin.com/in/gabriel-rodr%C3%ADguez-4b4a6216b/)
 
 ---
