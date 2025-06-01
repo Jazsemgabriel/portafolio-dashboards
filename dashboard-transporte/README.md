@@ -27,9 +27,10 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 - `dim_choferes`
 - `dim_vehiculos`
 - `dim_calendario`
-
-![Modelo Relacional](./modelo_relacional.png)
+  
 📌 *Modelo relacional ilustrado:*
+![Modelo Relacional](./modelo_relacional.png)
+
 ---
 
 ## 📊 Vistas del Dashboard
