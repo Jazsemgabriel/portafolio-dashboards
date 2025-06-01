@@ -69,7 +69,7 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 ![Página Ciudades](./paginas/02.ciudades.png)
 
 ### 3. Vehículos
-![Página Clientes](./03./paginas/vehiculos.png)
+![Página Clientes](./paginas/03.vehiculos.png)
 
 ### 3. Clientes
 ![Página Clientes](./paginas/04.clientes.png)
