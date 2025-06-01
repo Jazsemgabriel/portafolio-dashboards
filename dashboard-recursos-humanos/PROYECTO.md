@@ -54,7 +54,7 @@ Este dashboard está basado en un modelo estrella con las siguientes tablas:
 - `dim_fecha`
 
 📌 *Modelo relacional ilustrado:*
-![Modelo Relacional](./paginas/modelado.png)
+![Modelo Relacional](./paginas/mdoelado.png)
 
 ---
 
