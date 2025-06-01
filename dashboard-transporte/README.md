@@ -19,7 +19,7 @@ Visualizar indicadores clave para la toma de decisiones operativas y comerciales
 Este dashboard está basado en un modelo estrella con las siguientes tablas:
 
 **Tabla de hechos:**
-- `fact_viajes`: contiene ingresos, costos, márgenes, fechas y vehículos
+- `fact_viajes`: contiene ingresos, costos, número de pasajeros, estado del viaje, etc.
 
 **Dimensiones:**
 - `dim_clientes`
