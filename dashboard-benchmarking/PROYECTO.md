@@ -52,22 +52,22 @@ El dashboard presenta varias páginas clave para un análisis exhaustivo:
 ### 1. Overview
 Esta página ofrece una visión general del rendimiento de las marcas en redes sociales, mostrando promedios de publicaciones, interacciones, likes, comentarios y shares. Incluye un gráfico de dispersión de liderazgo en redes sociales y un tree map de formatos con más interacciones.
 
-![Página Overview](.paginas/pbi_project_bench_bcp_1.png)
+![Página Overview](./paginas/pbi_project_bench_bcp_1.png)
 
 ### 2. Frecuencia Post
 Esta vista se centra en la frecuencia de las publicaciones por plataforma y marca, mostrando comparativas anuales y mensuales de posts, además de la evolución de publicaciones de la categoría por año.
 
-![Página Frecuencia Post](.paginas/pbi_project_bench_bcp_2.png)
+![Página Frecuencia Post](./paginas/pbi_project_bench_bcp_2.png)
 
 ### 3. Evolución Post
 Aquí se analiza la relación de publicaciones e interacciones por mes y la distribución de publicaciones por competidor, permitiendo observar patrones y tendencias en la actividad de los usuarios.
 
-![Página Evolución Post](.paginas/pbi_project_bench_bcp_3.png)
+![Página Evolución Post](./paginas/pbi_project_bench_bcp_3.png)
 
 ### 4. Ejes de Contenido BCP
 Esta página se enfoca en la efectividad de los diferentes ejes o pilares de contenido, mostrando el alcance y las interacciones por eje de contenido, así como su evolución temporal.
 
-![Página Ejes de Contenido BCP](.paginas/pbi_project_bench_bcp_4.png)
+![Página Ejes de Contenido BCP](./paginas/pbi_project_bench_bcp_4.png)
 
 ---
 
