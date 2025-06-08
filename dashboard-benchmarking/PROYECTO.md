@@ -23,28 +23,25 @@ Este dashboard fue construido a partir de un enfoque completo que incluyó:
 ### 1. Diseño y Planificación
 Se diseñó una interfaz visual clara y dinámica, pensada para la comparación de métricas de redes sociales y la identificación de tendencias clave entre los competidores.
 
-### 2. Estructuración de la fuente de datos
-La información proveniente de diversas fuentes de redes sociales fue transformada y estructurada en un **modelo dimensional**, optimizado para el análisis de publicaciones e interacciones.
+### 2. Preparación y preprocesamiento de datos con Python
+-   La información proveniente de diversas fuentes de redes sociales fue procesada y consolidada en una **única tabla** utilizando **Python (Pandas)**.
+-   Se unificaron y limpiaron los datos, creando campos categóricos relevantes (como 'red_social', 'tipo_de_contenido', 'marca', etc.).
+-   Se gestionaron y eliminaron los valores nulos para asegurar la calidad del dataset.
 
-### 3. Preparación y limpieza de datos
--   Uso de **Power Query** para la transformación y limpieza de datos, incluyendo la normalización de nombres de plataformas, marcas y tipos de contenido.
--   Manejo de datos duplicados y errores para asegurar la fiabilidad de las métricas.
+### 3. Modelado en Power BI
+La tabla de datos consolidada fue cargada directamente en Power BI. Para este proyecto, no se implementó un modelo dimensional en estrella, trabajando con una estructura de tabla única optimizada para la visualización.
 
-### 4. Modelado relacional en Power BI
-Se crearon relaciones eficientes entre las tablas del modelo, facilitando el cruce de información entre publicaciones, interacciones, plataformas y marcas para un análisis comparativo robusto.
-
-### 5. Creación de medidas con DAX
--   Se desarrollaron métricas clave para el benchmarking, como promedios de publicaciones, interacciones, likes, shares y comentarios.
+### 4. Creación de medidas con DAX
+-   Se desarrollaron métricas clave para el benchmarking, como promedios de interacción, volumen de publicaciones, likes, shares y comentarios.
 -   Se crearon medidas para el análisis evolutivo y la segmentación por tipo de contenido y plataforma.
 
 ---
 
-## 🧱 Modelo Dimensional
+## 🧱 Estructura de Datos
 
-Este dashboard está basado en un modelo dimensional adaptado para el análisis de redes sociales, incluyendo tablas de hechos y dimensiones relacionadas con las publicaciones, interacciones y características de los contenidos.
+Para este dashboard, toda la información de las redes sociales de los competidores se consolidó en una **única tabla** de datos.
 
-📌 *Modelo relacional ilustrado: (Pendiente de tu captura si es diferente al de RRHH)*
-*(Si tienes un modelo relacional específico para este proyecto, por favor, proporciónamelo. De lo contrario, puedes usar un placeholder o omitir esta sección si no es crucial)*
+📌 *No se utiliza un modelo relacional en estrella para este dashboard, ya que los datos fueron preprocesados y unificados en una sola tabla.*
 
 ---
 
@@ -67,7 +64,7 @@ Aquí se analiza la relación de publicaciones e interacciones por mes y la dist
 
 ![Página Evolución Post](./pbi_project_bench_bcp_3.png)
 
-### 4. Ejes de contenido BCP
+### 4. Ejes de Contenido BCP
 Esta página se enfoca en la efectividad de los diferentes ejes o pilares de contenido, mostrando el alcance y las interacciones por eje de contenido, así como su evolución temporal.
 
 ![Página Ejes de Contenido BCP](./pbi_project_bench_bcp_4.png)
@@ -78,7 +75,7 @@ Esta página se enfoca en la efectividad de los diferentes ejes o pilares de con
 
 Las medidas DAX utilizadas en este dashboard están orientadas a calcular métricas clave de rendimiento y comparación en redes sociales, como promedios de interacción, volumen de publicaciones, ratios de engagement y análisis de alcance.
 
-*(Puedes añadir ejemplos de medidas DAX aquí si lo deseas, siguiendo el formato de bloques de código como en el dashboard anterior. Si no, se mantendrá una descripción general como esta).*
+*(Puedes añadir ejemplos de medidas DAX aquí si lo deseas. Si no, se mantendrá esta descripción general).*
 
 📌 *Captura de medidas en Power BI: (Pendiente de tu captura si es diferente al de RRHH)*
 *(Si tienes una captura de las medidas específicas de este proyecto, por favor, proporciónala. De lo contrario, puedes usar un placeholder o omitir esta sección si no es crucial).*
@@ -99,7 +96,7 @@ Basado en las visualizaciones del dashboard, se pueden extraer las siguientes co
 ## 🛠️ Herramientas utilizadas
 
 -   Power BI Desktop
--   Power Query
+-   Python (Pandas)
 -   DAX
 
 ---
