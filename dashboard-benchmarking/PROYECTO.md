@@ -52,44 +52,28 @@ El dashboard presenta varias páginas clave para un análisis exhaustivo:
 ### 1. Overview
 Esta página ofrece una visión general del rendimiento de las marcas en redes sociales, mostrando promedios de publicaciones, interacciones, likes, comentarios y shares. Incluye un gráfico de dispersión de liderazgo en redes sociales y un tree map de formatos con más interacciones.
 
-![Página Overview](./pbi_project_bench_bcp_1.png)
+![Página Overview](.paginas/pbi_project_bench_bcp_1.png)
 
 ### 2. Frecuencia Post
 Esta vista se centra en la frecuencia de las publicaciones por plataforma y marca, mostrando comparativas anuales y mensuales de posts, además de la evolución de publicaciones de la categoría por año.
 
-![Página Frecuencia Post](./pbi_project_bench_bcp_2.png)
+![Página Frecuencia Post](.paginas/pbi_project_bench_bcp_2.png)
 
 ### 3. Evolución Post
 Aquí se analiza la relación de publicaciones e interacciones por mes y la distribución de publicaciones por competidor, permitiendo observar patrones y tendencias en la actividad de los usuarios.
 
-![Página Evolución Post](./pbi_project_bench_bcp_3.png)
+![Página Evolución Post](.paginas/pbi_project_bench_bcp_3.png)
 
 ### 4. Ejes de Contenido BCP
 Esta página se enfoca en la efectividad de los diferentes ejes o pilares de contenido, mostrando el alcance y las interacciones por eje de contenido, así como su evolución temporal.
 
-![Página Ejes de Contenido BCP](./pbi_project_bench_bcp_4.png)
+![Página Ejes de Contenido BCP](.paginas/pbi_project_bench_bcp_4.png)
 
 ---
 
 ## 🧠 Medidas DAX
 
 Las medidas DAX utilizadas en este dashboard están orientadas a calcular métricas clave de rendimiento y comparación en redes sociales, como promedios de interacción, volumen de publicaciones, ratios de engagement y análisis de alcance.
-
-*(Puedes añadir ejemplos de medidas DAX aquí si lo deseas. Si no, se mantendrá esta descripción general).*
-
-📌 *Captura de medidas en Power BI: (Pendiente de tu captura si es diferente al de RRHH)*
-*(Si tienes una captura de las medidas específicas de este proyecto, por favor, proporciónala. De lo contrario, puedes usar un placeholder o omitir esta sección si no es crucial).*
-
----
-
-## 🧩 Conclusiones
-
-Basado en las visualizaciones del dashboard, se pueden extraer las siguientes conclusiones iniciales:
-
--   [Aquí puedes añadir conclusiones específicas sobre el rendimiento de los competidores, por ejemplo: qué marca tiene más interacciones, qué tipo de contenido es más efectivo, qué plataforma genera más engagement, etc.]
--   [Ejemplo: La marca BCP tiene el mayor volumen de interacciones en Facebook.]
--   [Ejemplo: Los videos son el formato de contenido que genera más likes y shares.]
--   [Ejemplo: La frecuencia de publicación varía significativamente entre plataformas, con Instagram liderando en volumen.]
 
 ---
 
