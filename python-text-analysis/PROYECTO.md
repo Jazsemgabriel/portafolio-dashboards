@@ -56,13 +56,13 @@ A continuación, se presentan algunas de las visualizaciones generadas como part
 ### Nube de Palabras de Bigramas Negativos
 Esta visualización resalta los pares de palabras más frecuentes en los mensajes con valoración negativa, con un esquema de colores que indica su frecuencia (rojo para más frecuente, amarillo para menos).
 
-![Nube de Palabras de Bigramas Negativos](./paginas/nube_palabras_negativos.png)
+![Nube de Palabras de Bigramas Negativos](./paginas/nube_palabras.png)
 
 ### Distribución de Sentimiento
 ![Gráfico 1](./paginas/sentimiento_mes_prima.png)
 
 ### Distribución de menciones por red social a lo largo de los meses
-![Gráfico 2](./paginas/proporcion_menciones_prima.png)
+![Gráfico 2](./paginas/proporncion_menciones_prima.png)
 
 ### Frecuencia de Palabras Negativas
 ![Gráfico 4](./paginas/palabras_negativas_prima.png)
