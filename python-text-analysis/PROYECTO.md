@@ -51,28 +51,42 @@ El análisis se basa en un dataset que, según el código, contiene información
 
 ## 📊 Resultados y Visualizaciones
 
-A continuación, se presentan algunas de las visualizaciones generadas como parte de este análisis, que incluyen nubes de palabras enfocadas en los bigramas con sentimiento negativo:
+A continuación, se presentan algunas de las visualizaciones generadas como parte de este análisis:
 
 ### Nube de Palabras de Bigramas Negativos
 Esta visualización resalta los pares de palabras más frecuentes en los mensajes con valoración negativa, con un esquema de colores que indica su frecuencia (rojo para más frecuente, amarillo para menos).
 
-![Nube de Palabras de Bigramas Negativos](./nube_palabras_negativos.png)
+![Nube de Palabras de Bigramas Negativos](./paginas/nube_palabras_negativos.png)
 
-*(Si tienes otras visualizaciones generadas por el script, como distribuciones de sentimiento o gráficos de frecuencia, puedes incluirlas aquí siguiendo el mismo formato de `![Descripción](./nombre_imagen.png)`).*
+### Distribución de Sentimiento
+![Gráfico 1](./paginas/sentimiento_mes_prima.png)
+
+### Distribución de menciones por red social a lo largo de los meses
+![Gráfico 2](./paginas/proporcion_menciones_prima.png)
+
+### Frecuencia de Palabras Negativas
+![Gráfico 4](./paginas/palabras_negativas_prima.png)
+
+### Frecuencia de Palabras Negativas (bigrama)
+![Gráfico 5](./paginas/bigramas_negativos.png)
+
+### Frecuencia de Palabras Negativas sobre Retiros de AFP (bigrama)
+![Gráfico 6](./paginas/retiros_negativo_bigramas.png)
 
 ---
 
-## 🧠 Insights y Conclusiones (Ejemplos)
+## 🧠 Insights y Conclusiones
 
 Basado en el análisis de n-gramas, se pueden extraer conclusiones como:
 
-- Para el sentimiento negativo hay una gran predominancia de palabras referentes a rentabilidad y a los 17 años de Prima liderando (ejemplo: "17 años robando mi plata... sinvergüenzas" o "17 años enriqueciendo con la plata de los aportes"). Se sugiere tomar acción para cambiar la percepción de enriquecimiento a costa de los clientes que tiene la marca.
-Para el sentimiento neutro la combinación de palabras más frecuentes corresponde a solicitudes de información. Así como buena recepción de contenido de seguridad ("gracias") con la participación de Stephen Jika y Lovina Stephen.
-De las categorias tagueadas:
-El 17% corresponde a Campañas en su mayoría de traspasos, donde el sentimiento negativo se ve muy concentrado en torno a los 17 años de prima liderando y cuenta con alta presencia de comentarios de poop (💩) además de resumirse en "17 años robando".
-El 11% corresponde a Aportes y fondos, donde el sentimiento negativo concentra combinaciones de palabras referentes a que "la rentabilidad en realidad es negativa".
-El 7% corresponde a Retiros, donde la negatividad está centrada en la devolución de dinero y que "la afp no libera las 4 UIT's que tocan por ley".
-Entre las palabras frecuentes, se destacó la combinación plazo fijo, donde los usuarios mencionaron su preferencia por retirar dinero de la AFP y depositarlo en un plazo fijo. Esto sugiere la oportunidad de trabajar con productos similares o reforzar la confianza que genera un Fondo de Pensiones en comparación con un producto como el plazo fijo.
+-   Para el sentimiento negativo hay una gran predominancia de palabras referentes a rentabilidad y a los 17 años de Prima liderando (ejemplo: "17 años robando mi plata... sinvergüenzas" o "17 años enriqueciendo con la plata de los aportes"). Se sugiere tomar acción para cambiar la percepción de enriquecimiento a costa de los clientes que tiene la marca.
+-   Para el sentimiento neutro la combinación de palabras más frecuentes corresponde a solicitudes de información. Así como buena recepción de contenido de seguridad ("gracias") con la participación de Stephen Jika y Lovina Stephen.
+-   De las categorías tagueadas:
+    * El 17% corresponde a Campañas en su mayoría de traspasos, donde el sentimiento negativo se ve muy concentrado en torno a los 17 años de prima liderando y cuenta con alta presencia de comentarios de poop (💩) además de resumirse en "17 años robando".
+    * El 11% corresponde a Aportes y fondos, donde el sentimiento negativo concentra combinaciones de palabras referentes a que "la rentabilidad en realidad es negativa".
+    * El 7% corresponde a Retiros, donde la negatividad está centrada en la devolución de dinero y que "la afp no libera las 4 UIT's que tocan por ley".
+-   Entre las palabras frecuentes, se destacó la combinación "plazo fijo", donde los usuarios mencionaron su preferencia por retirar dinero de la AFP y depositarlo en un plazo fijo. Esto sugiere la oportunidad de trabajar con productos similares o reforzar la confianza que genera un Fondo de Pensiones en comparación con un producto como el plazo fijo.
+
 ---
 
 ## 🛠️ Herramientas Utilizadas
@@ -88,10 +102,7 @@ Entre las palabras frecuentes, se destacó la combinación plazo fijo, donde los
 
 ## 📄 Archivos del Proyecto
 
--   `text_analysis.py`: Script principal de Python para el análisis de texto.
--   `bbdd_consolidado_prima - quantico_sentimiento_prima.csv`
--   `nube_palabras_negativos.png`: Imagen de la nube de palabras generada.
-
+-   `text_analysis.py`: 
 ---
 
 ## 👤 Autor
