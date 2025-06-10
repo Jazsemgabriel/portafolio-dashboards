@@ -102,7 +102,7 @@ Basado en el análisis de n-gramas, se pueden extraer conclusiones como:
 
 ## 📄 Archivos del Proyecto
 
--   `text_analysis.py`: 
+-   `text_analysis.py`: (https://github.com/Jazsemgabriel/portafolio-dashboards/blob/main/python-text-analysis/paginas/text_analysis.py)
 ---
 
 ## 👤 Autor
