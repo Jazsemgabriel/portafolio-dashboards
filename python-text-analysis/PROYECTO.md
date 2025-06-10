@@ -54,8 +54,6 @@ El análisis se basa en un dataset que, según el código, contiene información
 A continuación, se presentan algunas de las visualizaciones generadas como parte de este análisis:
 
 ### Nube de Palabras de Bigramas Negativos
-Esta visualización resalta los pares de palabras más frecuentes en los mensajes con valoración negativa, con un esquema de colores que indica su frecuencia (rojo para más frecuente, amarillo para menos).
-
 ![Nube de Palabras de Bigramas Negativos](./paginas/nube_palabras.png)
 
 ### Distribución de Sentimiento
