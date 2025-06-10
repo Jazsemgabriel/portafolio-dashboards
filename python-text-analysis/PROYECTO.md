@@ -66,12 +66,13 @@ Esta visualización resalta los pares de palabras más frecuentes en los mensaje
 
 Basado en el análisis de n-gramas, se pueden extraer conclusiones como:
 
--   [Aquí puedes añadir ejemplos de bigramas comunes en el sentimiento negativo y lo que podrían indicar. Por ejemplo: "servicio al cliente", "problema producto", "demora entrega".]
--   [Relaciona los bigramas con posibles áreas de mejora para la marca Prima.]
--   [Comenta si la nube de palabras reveló algún tema inesperado o recurrente.]
--   [Ejemplo: Los bigramas "servicio cliente" y "mala calidad" son recurrentes en los comentarios negativos, indicando áreas críticas de atención.]
--   [Ejemplo: La frecuencia de "demora entrega" sugiere un punto de fricción en la logística.]
-
+- Para el sentimiento negativo hay una gran predominancia de palabras referentes a rentabilidad y a los 17 años de Prima liderando (ejemplo: "17 años robando mi plata... sinvergüenzas" o "17 años enriqueciendo con la plata de los aportes"). Se sugiere tomar acción para cambiar la percepción de enriquecimiento a costa de los clientes que tiene la marca.
+Para el sentimiento neutro la combinación de palabras más frecuentes corresponde a solicitudes de información. Así como buena recepción de contenido de seguridad ("gracias") con la participación de Stephen Jika y Lovina Stephen.
+De las categorias tagueadas:
+El 17% corresponde a Campañas en su mayoría de traspasos, donde el sentimiento negativo se ve muy concentrado en torno a los 17 años de prima liderando y cuenta con alta presencia de comentarios de poop (💩) además de resumirse en "17 años robando".
+El 11% corresponde a Aportes y fondos, donde el sentimiento negativo concentra combinaciones de palabras referentes a que "la rentabilidad en realidad es negativa".
+El 7% corresponde a Retiros, donde la negatividad está centrada en la devolución de dinero y que "la afp no libera las 4 UIT's que tocan por ley".
+Entre las palabras frecuentes, se destacó la combinación plazo fijo, donde los usuarios mencionaron su preferencia por retirar dinero de la AFP y depositarlo en un plazo fijo. Esto sugiere la oportunidad de trabajar con productos similares o reforzar la confianza que genera un Fondo de Pensiones en comparación con un producto como el plazo fijo.
 ---
 
 ## 🛠️ Herramientas Utilizadas
@@ -88,7 +89,7 @@ Basado en el análisis de n-gramas, se pueden extraer conclusiones como:
 ## 📄 Archivos del Proyecto
 
 -   `text_analysis.py`: Script principal de Python para el análisis de texto.
--   `bbdd_consolidado_prima - quantico_sentimiento_prima.csv`: (Archivo de datos, si lo incluyes en el repo o mencionas su ubicación).
+-   `bbdd_consolidado_prima - quantico_sentimiento_prima.csv`
 -   `nube_palabras_negativos.png`: Imagen de la nube de palabras generada.
 
 ---
