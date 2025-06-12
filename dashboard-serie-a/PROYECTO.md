@@ -65,22 +65,23 @@ Esta página ofrece una visión general del rendimiento de los equipos, incluyen
 ![Página Overview](./paginas/png_1.png)
 
 ### 2. Análisis Ofensivo
-Detalle de las métricas de ataque, como tiros totales, tiros a puerta, goles por partido y eficiencia ofensiva de los equipos.
+Detalle de las métricas de ataque goles por partido y eficiencia ofensiva de los de jugadores.
 
 ![Página Análisis Ofensivo](./paginas/png_2.png)
 
-### 3. Análisis Defensivo
-Exploración de las métricas defensivas, incluyendo goles recibidos, goles esperados en contra (xGA), porcentaje de posesión y otras estadísticas de contención.
+### 3. Análisis demográfico
+Esta sección permite comparar datos demográficos tales como la nacionalidad, cantidad de extranjeros, entre otros.
 
 ![Página Análisis Defensivo](./paginas/png_3.png)
 
-### 4. Rendimiento por Partido / Comparativa Detallada
-Esta sección permite comparar el rendimiento de equipos específicos o analizar métricas en detalle por partido.
+### 4. Análisis a nivel institucional
+Esta sección permite comparar datos más a nivel club como Estadio, cantidad de aficionados, clubes por ciudad, promedio de edad por equipo.
 
 ![Página Rendimiento Detallado](./paginas/png_4.png)
 
-### 5. Desempeño de Jugadores Clave (o Frecuencia/Tendencias)
-*(Descripción si esta página muestra rendimiento de jugadores top o tendencias específicas, ya que el `png_5` es un gráfico de área que podría indicar evolución o distribución)*
+### 5. Comparativo de rendimiento entre equipos
+Se utilizó un gráfico radial para comparar fortalezas y debilidades entre equipos con algunos datos cualitativos y cuantitativos. 
+
 ![Página Adicional](./paginas/png_5.png)
 
 ---
