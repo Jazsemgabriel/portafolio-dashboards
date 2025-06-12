@@ -43,7 +43,7 @@ Este informe fue construido siguiendo un pipeline de datos que incluye:
 El dashboard está basado en un modelo estrella para una eficiente gestión de los datos futbolísticos:
 
 **Tabla de hechos:**
--   `fct_stats_equipo`: Contiene las métricas numéricas de cada partido/equipo (goles, xG, tiros, pases, etc.).
+-   `BD_resultados`: Contiene las métricas numéricas de cada partido/equipo (goles, xG, tiros, pases, etc.).
 
 **Dimensiones (ejemplos, adaptado a los datos de fbref):**
 -   `dim_equipos`: Nombres de los equipos.
