@@ -43,12 +43,14 @@ Este informe fue construido siguiendo un pipeline de datos que incluye:
 El dashboard está basado en un modelo estrella para una eficiente gestión de los datos futbolísticos:
 
 **Tabla de hechos:**
--   `BD_resultados`: Contiene las métricas numéricas de cada partido/equipo (goles, xG, tiros, pases, etc.).
+-   `BD_Resultado`
 
-**Dimensiones (ejemplos, adaptado a los datos de fbref):**
--   `dim_equipos`: Nombres de los equipos.
--   `dim_calendario`: Información de fecha y jornada.
--   `dim_partidos`: Detalles únicos de cada encuentro.
+**Dimensiones:**
+-   `dim_Equipo`
+-   `dim_Nacionalidad`
+-   `dim_Calendario`
+-   `dim_Temporada`
+-   `BD_Jugadores`
 
 📌 *Modelo relacional ilustrado:*
 ![Modelo Relacional](./paginas/modelado.png)
