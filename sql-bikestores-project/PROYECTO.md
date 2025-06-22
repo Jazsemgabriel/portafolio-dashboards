@@ -35,7 +35,7 @@ Las consultas se ejecutaron sobre las siguientes tablas principales de la base d
 -   **`stores`**: Gestiona la información de las diferentes sucursales de la tienda.
 -   **`orders`**: Registra los pedidos realizados.
 -   **`order_items`**: Detalla los productos incluidos en cada pedido.
--   **`staffs`**: (Mencionada en algunas consultas) Contiene información sobre el personal de ventas.
+-   **`staffs`**: Contiene información sobre el personal de ventas.
 
 ---
 
