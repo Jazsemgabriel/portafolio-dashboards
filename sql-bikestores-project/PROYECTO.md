@@ -19,7 +19,7 @@ Para la realización de este análisis, se utilizó una base de datos relacional
 
 ### Diagrama Entidad-Relación (ERD)
 
-![image](https://github.com/user-attachments/assets/9362030c-aae8-4cd2-8427-e08705cfa2c2)
+![image](https://github.com/user-attachments/assets/7fb74c3a-fc13-4072-a41d-33e72de89597)
 
 ---
 
