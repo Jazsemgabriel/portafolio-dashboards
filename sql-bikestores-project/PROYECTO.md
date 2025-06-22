@@ -46,7 +46,8 @@ Esta sección presenta una serie de consultas SQL desarrolladas para analizar di
 ### Análisis de Ventas y Productos
 
 #### 1. Top 5 de productos más vendidos
-Identifica los 5 productos con la mayor cantidad vendida.
+![image](https://github.com/user-attachments/assets/8c70c8e7-98ff-4c65-8eaa-29817e172eea)
+
 ```sql
 SELECT TOP 5 p.product_name, SUM(oi.quantity) AS total_quantity
 FROM sales.order_items AS oi
@@ -54,6 +55,19 @@ INNER JOIN production.products AS p
 ON oi.product_id = p.product_id
 GROUP BY p.product_name
 ORDER BY total_quantity DESC
+```
 
-![image](https://github.com/user-attachments/assets/8c70c8e7-98ff-4c65-8eaa-29817e172eea) ```
+#### 2. Bottom 5 de productos menos vendidos
+![image](https://github.com/user-attachments/assets/64b833b4-9990-4b9b-9e0c-60bc4a50e361)
+
+```sql
+SELECT TOP 5 p.product_name, SUM(oi.quantity) AS total_quantity
+FROM sales.order_items AS oi
+INNER JOIN production.products AS p
+ON oi.product_id = p.product_id
+GROUP BY p.product_name
+ORDER BY total_quantity ASC
+```
+
+
 
