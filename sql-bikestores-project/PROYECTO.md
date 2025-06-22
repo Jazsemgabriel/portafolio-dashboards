@@ -317,6 +317,7 @@ GROUP BY c.category_id, c.category_name
 ORDER BY percentage_sold_last_year DESC
 ```
 
-👤 Autor
+## 👤 Autor
+
 Gabriel Rodríguez
-LinkedIn
+[LinkedIn](https://www.linkedin.com/in/gabriel-rodr%C3%ADguez-4b4a6216b/)
