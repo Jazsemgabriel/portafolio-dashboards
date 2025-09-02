@@ -19,25 +19,29 @@ El objetivo es proporcionar insights que faciliten la toma de decisiones estrat�
 
 ### 1. **Overview**  
 Visión general del negocio con KPIs principales: revenue, órdenes, ticket promedio, productos por compra, más vendidos y distribución de sesiones por canal.  
-![Overview](./01.%20overview.png)  
+<img width="841" height="703" alt="image" src="https://github.com/user-attachments/assets/facfb4d8-b0f6-4ee0-9b6b-815a7fc4fe3d" />
+
 
 ---
 
 ### 2. **Ventas**  
 Análisis detallado de ventas por libro, categoría y tendencia mensual de órdenes.  
-![Ventas](./02.Ventas.png)  
+<img width="842" height="701" alt="image" src="https://github.com/user-attachments/assets/cbdf02fb-88b0-4153-aad8-066d758c5f54" />
+
 
 ---
 
 ### 3. **Rentabilidad**  
 Comparación entre precio y volumen vendido, correlación entre revenue y precios, e identificación de los títulos más rentables.  
-![Rentabilidad](./03.%20Rentabilidad.png)  
+<img width="840" height="703" alt="image" src="https://github.com/user-attachments/assets/146b06da-7f36-4a07-a43a-cefd65926e3a" />
+
 
 ---
 
 ### 4. **Usuarios**  
 Evolución de usuarios, engagement rate, distribución por canal y comportamiento de nuevos vs recurrentes.  
-![Usuarios](./04.%20Usuarios.png)  
+<img width="844" height="705" alt="image" src="https://github.com/user-attachments/assets/c41a0cf2-fcbc-47dc-9f48-45dc2f56a177" />
+
 
 ---
 
@@ -45,7 +49,6 @@ Evolución de usuarios, engagement rate, distribución por canal y comportamient
 
 - El **revenue** en 2024 creció un **4.7%** respecto al año anterior.  
 - Los libros de mayor precio (>€25) concentran un volumen alto de ventas, mostrando que los clientes perciben valor en títulos premium.  
-- El **engagement rate** se mantiene en un 59%, con tendencia positiva en la segunda mitad del año.  
 - Los canales digitales tienen un rendimiento balanceado, con **Social, Email y Direct** aportando casi el 50% de las sesiones.  
 
 ---
